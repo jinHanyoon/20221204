@@ -1,6 +1,5 @@
 #wrap{width: 100%;}
 section{width: 100%;
-height: 700px;
 padding-top: 50px;}
 
 *{margin: 0; padding: 0;}
@@ -36,8 +35,8 @@ right: 210px;}
 
 
 #wrap{width: 100%;}
-.sub01_se{width: 100%; height: 800px;}
-.sub01{width: 100%; height: 800px;
+.sub01_se{width: 100%; height: 100vh;}
+.sub01{width: 100%; height: 100vh;
 position: relative;
 background:url(/img/subimg02.jpg);
 background-size: cover;
@@ -99,7 +98,7 @@ font-size: 20px; margin: 50px 10px;
 .sub02_img01::before{position: absolute;
     content: "";
     height: auto;
-    opacity: 0.2;
+    opacity: 0.6;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -124,7 +123,8 @@ position: relative;
     position: absolute;
     content: "";
 height: auto;
-opacity: 0.3;
+opacity: 0.6;
+
 top: 0px;
 left: 0px;
 right: 0px;
@@ -289,7 +289,7 @@ scale: 1.1;
         width: 100px; height:100px;
         position: absolute;
         left: 10px;
-        top: 25px;
+        top: 15px;
     }
 .sub03 .right_content .rightIcon img{width: 100%; height: 100%;}
     .sub03 .right_content .right_text{
@@ -357,8 +357,8 @@ background-repeat: no-repeat;
 }
 
 .page04_text02{
-left: 90px;
-color: #f8f8f8;
+    width: 100%;
+color: black;
 text-align: center;
     top: 130px;
     position: absolute;
@@ -366,27 +366,30 @@ text-align: center;
 .page04_text02 h2{
     font-size: 20px;
 }
-.page04_text02 .page04_icon{width: 25px;
-height: 25px;
+.page04_text02 .page04_icon{width: 10%;
+height: 10%;
 float: left;
-margin-left: 20px;
+text-align: center;
+margin-left: 15%;
 margin-top: 20px;
 }
 
 .page04_text02 .page04_icon img{width: 100%;
 height: 100%;
+text-align: center;
+
 }
 
 .page05_se{width: 100%;
             height: 1200px;
 }
-.page05{width: 1200px; margin: 0 auto; height: 600px;}
+.page05{width: 1200px; margin: 0 auto; height: 100%;}
 .page05_title {
     margin-left: 26px;
     width: 100%;
     float: left;}
 .page05_content{width:100%; 
-    height: 1000px;
+    height: 100%;
 }
 
 .page05_content .page05_List li{width: 30%; 
@@ -604,15 +607,20 @@ color: #606060;
 .sub03_content > div{width: 39.4%;}
 .sub03_content .left{width: 35.4%;}
 .sub03 .left_content li{
+    width: 100%;
+    margin: 3.9% 0;
     height: 50%;
-    margin: 3.9% 5%;
+    position: relative;
 }
 .sub03 .left_content .leftIcon{
-    right: 10%;
-    top: 10%;
+    right: 30px;
+    top: 10px;
 }
-.sub03 .left_content .left_text{width:30%;
-            height: 50%;
+.sub03 .left_content .left_text{
+    text-align: left;
+    box-sizing: border-box;
+    margin-right: 100px;
+    width: 90%;
 }
 
 .sub03 .left_content .left_text h1{ 
@@ -639,7 +647,7 @@ position: relative;}
             height: 50%;
 }
 
-.sub03 .right_content .right_text h1{ 
+.sub03 .right_content .right_text h1{   
     margin: 3.8%;
 }
 .sub03 .right_content .right_text p{
@@ -650,7 +658,9 @@ position: relative;}
 .page04_text{margin-left: 1%;
 }
 .page04_text a{width: 30%;}
-.page04_text02{left: 10%;}
+.page04_text02{left: 10%;
+
+}
 .page04_text02 .page04_icon{margin-left: 11%;}
 .page05_se{width: 100%;}
 .page05{width: 100%;}
@@ -672,33 +682,163 @@ margin: 9.7% 0 8% 5%;
 
 .page07_se{width: 100%;}
 .page07{width: 100%;}
-.page07_title{margin-left: 27%;}
-.page07_date{margin-left: 5%;}
-.page07_left{width: 60%;}
+.page07_title{box-sizing: border-box;
+    
+margin-left: 27%;
+}
+.page07_main{width: 100%;
+}
+.page07_date{margin-left: 8%;}
+.page07_left{width: 70%;
+}
 .page07_left_text{margin-top: 5%;}
 .page07_left_text .page07_main p{
     margin-right: 5%;}
-.page07_right{width: 40%;}
+.page07_right{width:30%;}
+.page07_main2{
+    font-size: 14px;
+    width: 100%;
+}
+.page07_main3{
+    width: 100%;
+    font-size: 14px;
+}
+
 
 .page08_se{width: 100%;}
 .page08{width: 100%;}
-.page08_right{width: 60%;}
-.page08_date{margin-left: 5%;}
-.page08_title{margin-left: 27%;}
+.page08_right{width: 70%;}
+.page08_date{margin-left: 8%;}
+.page08_title{margin-left: 27%;
+    box-sizing: border-box;
+}
 .page08_main p{
-margin-right: 5%;
+margin-right: 2%;
 }
 
-.page08_left {width: 40%;}
-.page08_main2{margin-left: 15%;}
-.page08_main3{margin-left: none;}
+.page08_left {width: 30%;}
+.page08_main2{margin-left: 15%;
+font-size: 14px;
+}
+.page08_main3{
+font-size: 14px;
+    
+    margin-left: none;}
 .page08_main3 p{margin: 1% 0;}
 }
 
 
 @media screen  and (max-width:767px) {
+.header_in{width: 100%;}
+.header_logo{width: 20%;
+                height: auto;}
+.nav_in .nav_menu li{width: 100%;}
+
+
+  .nav_in .nav_menu {
+    width: 300px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 50px;
+
+
+
+}
+.nav_in .nav_menu li a{
+    color: black;
+}
+.nav_in .nav_menu li {
+    display: none;
+}
+.nav_in .nav_menu li:hover{
+    background-color: #606060;
+    transition: 1s all;
+}
+.sub_menu{
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    width: 50px; height: 50px;
+background-color: #ccc;
+cursor: pointer;
 }
     
+ .sub_menu a{color: black;
+display: none;
+}   
+.sub01_text{width: 50%;
+    left: 5%;
+}
+.sub01_text h1{}
+.sub01_text h2{font-size: 20px;}
+.sub02 .sub02_content .sub02_list li{margin: 0;}
+.sub02_content .sub02_list li:nth-child(1){
+display: none;}
 
+.sub02_content .sub02_list li:nth-child(2){
+    width: 100%;
+}
 
+.sub02_content .sub02_list li:nth-child(3){
+    display: none;
+}
+.sub02_title{}
+.sub02_title span{margin: 10%;
+top: 10%;}
+.sub02_title h1{
+    top: 3%;
+    left:35%}
+
+.sub02_slider1 .sub02_btn li:nth-child(1){
+    display: block;
+    width: 33%;
+}   
+    .sub02_slider1 .sub02_btn li:nth-child(2){
+        display: block;
+
+    width: 33%;
+
+    }
+.sub02_slider1 .sub02_btn li:nth-child(3){
+    display: block;
+
+    width: 33%;
+
+}
+.sub02_content .sub02_slider li:nth-child(1) {
+    display: block;
+}
+.sub02_content .sub02_slider li:nth-child(2) {
+    display: block;
+}
+.sub02_content .sub02_slider li:nth-child(3) {
+    display: block;
+}
+
+.sub03_content {width: 100%;}
+.sub03_title{text-align: center;}
+.sub03_content .left{width: 100%;}
+.sub03_content .left_content li{
+width: 100%;
+}
+.sub03 .left_content .left_text {
+   margin: 0 10%; 
+width: 60%;}
+.sub03 .left_text span{
+    padding: 1rem;
+
+}
+.sub03_content .center{display: none;}
+.sub03_content .right{width: 100%;}
+.sub03_content .right li {width: 100%;}
+
+.sub03 .right_content .right_text {
+    width: 60%;
+    margin: 0 30%;
+
+}
+
+.page04_list li{}
+}
 @media screen and (max-width:480px) {}

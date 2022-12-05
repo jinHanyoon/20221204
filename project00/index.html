@@ -10,6 +10,11 @@
     <script>
         $(document).ready(function(){
             current=0;
+            $('.sub_menu').click(function(){
+                $('.nav_menu li').slideToggle()
+            })
+            
+                
             $('.sub02_btn li').eq(0).addClass('on')
         $('.sub02_btn li').click(function(){
             var q= $(this).index()
