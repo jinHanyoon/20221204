@@ -9,12 +9,30 @@
     <script src="/js/main.js"></script>
     <script>
         $(document).ready(function(){
+            $('.nav_menu li').hide()
+            $('.page04_list p').hide()
             current=0;
-            $('.sub_menu').click(function(){
+            a=0;
+            $('.sub_menu').click(function(e){
+                e.preventDefault()
                 $('.nav_menu li').slideToggle()
             })
             
-                
+        $('.nav_menu li').hover(function(){
+            var m=$(this).index()
+            console.log(m)
+            navM(m)
+        },function(){
+            navM02()
+        })                
+        function navM(m){
+            $('.nav_menu li a').eq(m).addClass('on')
+        }
+        function navM02(){
+            $('.nav_menu li a').removeClass('on')
+        }
+
+
             $('.sub02_btn li').eq(0).addClass('on')
         $('.sub02_btn li').click(function(){
             var q= $(this).index()
@@ -34,6 +52,29 @@
        $('.sub02_btn li').eq(q).addClass('on')
        current = q;}
 
+        /*$('.page04_list p').hover(function(){
+
+            console.log(a)
+
+        },function(){
+        $('.page04_list').mouseenter(function(){
+            $('.page04_list p').hide()
+            $('.page04_list p').removeClass('on')
+        })})    */        
+        page04()
+       function page04(){
+        $('.page04_list h1').hover(function(){
+            $('.page04_list p').fadeIn(1000)
+        }
+
+       ,function(){  
+        
+        $('.page04_list').mouseenter(function(){
+            $('.page04_list p').hide()})
+       
+
+       })}
+
         })
     </script>
 </head>
@@ -51,8 +92,7 @@
             <li><a href="#">메뉴4</a></li>
             </ul>
             <div class="sub_menu">
-                <a href="#">sub1</a>
-                <a href="#">sub2</a>
+                <a href="#" class="menu">메뉴</a>
 
             </div>
         </div>
@@ -236,7 +276,7 @@
                         </li>
                         <li>
                                 <div class="page04_text02">
-                                    <h2>SANDARA PARK</h2>
+                                    <h2>Cherry HOUSE</h2>
                                     <div class="page04_icon">
                                         <img src="/img/icons8-구글-로고-50.png">
                                     </div>
