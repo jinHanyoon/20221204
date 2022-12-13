@@ -73,8 +73,33 @@
        
 
        })}
- 
+       footer_hover()
+       $('.footer_content li').hide()
+       function footer_hover(){
+        $('.footer_left h1').hover(function(){
+            $(this).addClass('on')
+        },function(){
+        })
 
+        $('.footer_left h1').hover(function(){
+            $(this).addClass('on')
+            $('.footer_content li').fadeIn(800)
+        },function(){
+            $('.footer_left').removeClass('on')
+        }
+        )
+        $('.footer_content li').hover(function(){
+            $(this).addClass('on')
+        },function(){
+            $('.footer_content li').removeClass('on')
+        })
+        $('.footer_right').mouseleave(function(){
+            $('.footer_content li').fadeOut(200)
+            $('.footer_left h1').removeClass('on')
+        })
+       }
+
+    
         })
     </script>
 </head>
@@ -465,6 +490,44 @@
             </div>
         </section>
     </div>
+    <footer>
+        <div class="footer_box">
+            <div class="footer_left">
+                <h1>FOOTER PAGE</h1>
+            </div>
+            <div class="footer_right">
+                <ul class="footer_content">
+                    <li>
+                    <h1>CONTTACT</h1>
+                        <div class="footer_text">
+                            <p>Footer page contact TEXT</p>
+                            <p>Footer page contact TEXT</p>
+                            <p>Footer page contact TEXT</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h1>PRODUCTS</h1>
+                            <div class="footer_text">
+                                <p>Footer page PRODUCTS TEXT</p>
+                                <p>Footer page PRODUCTS TEXT</p>
+                                <p>Footer page PRODUCTS TEXT</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h1>Information</h1>
+                                <div class="footer_text">
+                                    <p>Footer page Information Text</p>
+                                    <p>Footer page Information Text</p>
+                                    <p>Footer page Information Text</p>
+                                </div>
+                            </li>
+                </ul>
+
+            </div>
+
+            
+        </div>
+    </footer>
 </div>
 
 </body>

@@ -614,6 +614,84 @@ box-shadow: 5px 15px 25px black;
     .page08_main3 p{margin: 10px 0;}
     
 
+footer{width: 100%;
+height: 300px;
+background-color: black;
+
+}
+.footer_box{width: 1200px; margin: 0 auto;
+   
+    height: 300px;
+
+}
+.footer_left{width: 400px;
+            height: 300px;
+            position: relative;
+        float: left;
+
+}
+.footer_left h1{width: 100%;
+        text-align: center;
+        display: inline-block;
+        margin:30% 0;
+        font-size: 50px;
+        color: #f8f8f8;
+        position: absolute;
+        left: 100%;
+        border-bottom: 1px solid #f8f8f8;
+}
+
+.footer_left h1.on{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transition: all 1s;
+    border: none;
+    border-radius: 0;
+    font-size: 35px;
+}
+.footer_left.on{
+height: 100%;
+transition: 2s all;
+background-color: rgb(61, 60, 60);
+
+
+}
+
+.footer_right{width: 800px;
+        height: 300px;
+        float: left;
+color: #f8f8f8;
+
+}
+
+.footer_right .footer_content li{width: 250px;
+    cursor: pointer;
+text-align: left;
+    float: left;
+height: 300px;
+margin-left: 13px;
+}
+.footer_right .footer_content li.on{
+    background-color: rgb(61, 60, 60); 
+    background-size: cover;
+    transition: 1s all;
+
+}
+.footer_content h1{width: 100%;
+margin-top:15%;
+padding: 1rem;
+font-size: 26px;
+
+}
+.footer_content .footer_text{width: 100%;
+height: 180px;
+}
+.footer_content .footer_text p{
+    padding: 1rem;
+    font-size: 14px;
+}
+
 @media screen and (max-width:1024px){
     .header_in{width: 100%;
     margin: 0 auto;
@@ -772,7 +850,17 @@ font-size: 14px;
     
     margin-left: none;}
 .page08_main3 p{margin: 1% 0;}
+footer {width: 100%;}
+.footer_box{width: 100%;}
+.footer_left{width: 39%;}
+.footer_right{width: 60%;}
+.footer_right .footer_content li{
+width: 30%;
+margin-left: 1.2%;}
+.footer_content h1{padding: 5%;}
+.footer_right .footer_text p{padding: 5%;}
 }
+
 
 
 @media screen  and (max-width:767px) {
@@ -976,7 +1064,30 @@ width: 99%;
 height: 200px;
 }
 
+footer{width: 100%;}
+.footer_box{width: 100%;}
+.footer_left{width: 30%;
+}
+.footer_left h1{width: 100%;
+font-size: 18px;
+margin-top: 50%;
+}
 
+.footer_right{width: 70%;
+    height: auto;
+}
+.footer_right .footer_content li{
+width: 30%;
+height: auto;
+
+margin-left: 1.6%;
+}
+.footer_content h1{font-size: 14px;
+    margin-top: 50%;
+}
+.footer_content .footer_text p{
+    font-size: 10px;
+}
 
 }
 
