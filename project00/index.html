@@ -9,6 +9,8 @@
     <script src="/js/main.js"></script>
     <script>
         $(document).ready(function(){
+       $('.sub02_sliderText').eq(0).addClass('on')
+
             $('.nav_menu li').hide()
             $('.page04_list p').hide()
             current=0;
@@ -49,6 +51,9 @@
        nextImg.css({left:'100%'}).stop().animate({left:0})
        $('.sub02_btn li').removeClass('on')
        $('.sub02_btn li').eq(q).addClass('on')
+       $('.sub02_sliderText').removeClass('on')
+
+       $('.sub02_sliderText').eq(q).addClass('on')
        current = q;}
 
         /*$('.page04_list p').hover(function(){
@@ -62,17 +67,23 @@
         })})    */        
         page04()
        function page04(){
-        $('.page04_list h1').hover(function(){
+        $('.page04_se').mouseenter(function(){
             $('.page04_list p').fadeIn(1000)
-        }
+            $('.page04_list li').addClass('in')
+        }  )  
+          
 
-       ,function(){  
-        
-        $('.page04_list').mouseenter(function(){
-            $('.page04_list p').hide()})
-       
+ 
+            $('.page05_se').mouseenter(function(){
+            $('.page04_list p').hide(1000)
+            $('.page04_list li').removeClass('in')
+            
+        })
+    
+    }
 
-       })}
+     
+
        footer_hover()
        $('.footer_content li').hide()
        function footer_hover(){
