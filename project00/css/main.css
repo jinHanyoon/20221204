@@ -38,7 +38,7 @@ header {
   text-align: center;
   width: 150px;
 }
-.header_logo a {
+.header_logo h1 {
   color: #f8f8f8;
 }
 nav {
@@ -62,7 +62,7 @@ nav {
 }
 .sub_menu {
   position: absolute;
-  right: 210px;
+  right: 30%;
 }
 .sub_menu a {
   color: #f8f8f8;
